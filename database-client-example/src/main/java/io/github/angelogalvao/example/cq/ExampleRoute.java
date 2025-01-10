@@ -15,7 +15,7 @@ public class ExampleRoute extends RouteBuilder {
             .split(body()).streaming()
                 .to("log:row")
                 .to("mock:result")
-            .end();;
+            .end();
     }
 
     
